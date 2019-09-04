@@ -11,7 +11,7 @@
 * [heroku](https://lab-16-leyla.herokuapp.com/)
 
 #### Documentation
-* [jsdoc](http://localhost:3000/docs/) 
+* [jsdoc](comments within app.js) 
 
 ### Modules
 #### `users-model.js`

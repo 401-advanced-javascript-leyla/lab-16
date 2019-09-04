@@ -4,36 +4,22 @@
 const events = require('./events.js');
 require('./logger.js');
 
+const readFile = require('./readFile');
+const writeFile = require('./writeFile');
+const toUpperCase = require('./toUpperCase');
+
+
 const fs = require('fs');
 const util = require('util');
 
-/**
-* This function will read the file and convert the content to uppercase
-* @param {object} file
-*/
-const readFile = util.promisify(fs.readFile);
-
 
 /**
- * This function will read the file and convert the content to uppercase
+ * This function will read the File and then convert the content to uppercase, then save the file
  * @param {object} file
- * @returns {object} data
  */
-const writeFile = util.promisify(fs.writeFile);
-
-/**
- * This function will convert the content to uppercase (stringfy it first, then upper case it and re-buffer-ize it)
- * @param {object} data
- * @returns {object} text
- */
-const toUpperCase = (data)=>{
-  let text = data.toString().toUpperCase();
-  return Buffer.from(text);
-};
 
 const alterFile = (file) => {
   let text = null;
-
 
   readFile(file)
     .then(data =>{
@@ -52,3 +38,5 @@ const alterFile = (file) => {
 //When testing at terminal, need to write 'node src/app.js test.txt'
 let file = process.argv.slice(2).shift();
 alterFile(file);
+
+module.exports = alterFile;

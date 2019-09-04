@@ -28,6 +28,7 @@
     "express-swagger-generator": "^1.1.15",
     "jest": "^24.8.0",
     "jsonwebtoken": "^8.4.0",
+    "mock-fs": "^4.10.1",
     "mongodb-memory-server": "^5.1.4",
     "mongoose": "^5.3.13",
     "mongoose-schema-jsonschema": "^1.1.15",
