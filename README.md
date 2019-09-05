@@ -7,23 +7,15 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/401-advanced-javascript-leyla/lab-16/pulls)
-* [travis](https://travis-ci.com/401-advanced-javascript-leyla/lab-16)
-* [heroku](https://lab-16-leyla.herokuapp.com/)
 
 #### Documentation
-* [jsdoc](http://localhost:3000/docs/) 
-
-### Modules
-#### `users-model.js`
-##### Exported User Schema and methods (createFromOauth(), authenticateBasic(), comparePassword(), generateToken())
+* [jsdoc](comments within app.js) 
 
 
 #### Running the app
 * `npm install`
 * `node src/app.js test.txt`
 
-  
-#### Tests
-* `npm run test`
+
 
 
